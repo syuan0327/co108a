@@ -19,3 +19,4 @@ CHIP And {
     Not(in=nandab,out=out);
 }
 
+![](a.jpg)
