@@ -37,5 +37,5 @@ CHIP Memory {
 	Keyboard(out=kout);//keyboard有out沒有in
 		
 	Mux16(a=Rout, b=outsk, sel=address[14], out=out);//[14]=0:ram16k,=1:screen or keyboard
-	Mux16(a=outS, b=Kout, sel=address[13], out=outsk);[13]=0:screen,=1:keyboard
+	Mux16(a=Sout, b=kout, sel=address[13], out=outsk);//[13]=0:screen,=1:keyboard
 }
